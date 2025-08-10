@@ -95,8 +95,40 @@ def secountlag(va):
     print(val[-2])
 secountlag(val)
 # Count the frequency of characters in a string.
+cha = "apple"
+def coutstrfre(cha):
+    freq = {}
+    for i in cha:
+        if i in freq:
+            freq[i] += 1
+        else:
+            freq[i] = 1
+    return freq
+print(coutstrfre(cha))
+        
 
 # Find all pairs in an array with a given sum.
+def find_pairs(arr, target):
+    pairs = []
+    seen = set()
+    for num in arr:
+        complement = target - num
+        print("complement",complement)
+        if complement in seen:
+            print("inside",complement,"inside",seen)
+            pairs.append((complement, num))
+            print("append paire",pairs)
+        seen.add(num)
+    print("seend",seen)
+    
+
+    return pairs
+
+arr = [2, 4, 3, 5, 7, 8, 9]
+target_sum = 7
+result = find_pairs(arr, target_sum)
+print(result)
+
 
 # Remove duplicates from a list without using set().
 
