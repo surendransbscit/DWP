@@ -88,6 +88,8 @@ fib(7)
 print()
 
 # 🔹 Intermediate Level
+
+
 # Find the second largest number in a list.
 def secountlag(va):
     val.sort()
@@ -131,8 +133,22 @@ print(result)
 
 
 # Remove duplicates from a list without using set().
+dub = [1,2,2,3,4,4]
+def duplication(dub):
+    ar=[]
+    for i in range(len(dub)):
+        if dub[i] not in ar:
+            ar.append(dub[i])
+        else:
+            continue
+    return ar
+print("this remove dublication with out useeing set ",dub,duplication(dub))
 
 # Merge two sorted lists into one sorted list.
+one = [1,2,3,4]
+two = [5,6,7,8]
+mergelist = one + two
+print("merge list",mergelist)
 
 # Find the intersection of two lists.
 
